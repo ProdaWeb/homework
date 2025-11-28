@@ -69,10 +69,11 @@ input {
 
 .textarea {
     max-width: 240px;
-    width: fit-content;
+    min-width: min-content;
     max-height: 260px;
-    height: fit-content;
+    min-height: min-content;
     padding: 5px;
+
 
 }
 
@@ -97,5 +98,6 @@ input {
 .button:active {
     background-color: rgb(0, 0, 0);
     color: aliceblue;
+
 
 }
