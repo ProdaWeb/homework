@@ -1,0 +1,45 @@
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-size: 12px;
+    box-sizing: border-box;
+    background-image: linear-gradient(
+        to left,
+        hsla(300, 100%, 25%, 0.12),
+        hsla(240, 100%, 50%, 0.12) 200%);
+    margin: 0;
+    padding: 0;
+    
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    z-index: 15;
+
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    margin: 30px auto;
+}
+
+.footer-copyright {
+    padding: 30px 0;
+    border-top: 1px solid #535755;
+}
+
+.logo {
+    text-align: center;
+    align-self: center;
+}

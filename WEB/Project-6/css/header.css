@@ -1,0 +1,53 @@
+
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    max-width: 1190px;
+    background-color: #fff;
+    z-index: 5;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px 30px ;
+    border-bottom: 1px solid #535755;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    background-color: black;
+    margin: 10px;
+}
+
+.info{
+    display: flex;
+    min-height: 48px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+.header-text {
+    font-family: Oswald;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #717372;
+}
+
+.phone{
+    font-family: Oswald;
+    font-weight: 500;
+    font-size: 16px;
+    font-weight: 700;
+    font-size: 14px;
+}
