@@ -1,0 +1,247 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+html {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 375px;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+a,
+button {
+  outline: none;
+}
+
+details {
+  margin-bottom: 20px;
+  border-block: 1px solid #d3cbd9;
+}
+
+
+details[open] summary::after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+
+summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  list-style: none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+summary::after {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 22px;
+  background: url("../images/arrow-down-icon.svg") no-repeat center / cover;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details > p {
+  padding: 0 20px 20px;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+
+.text-sub {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #858e8a;
+}
+
+.button {
+  display: inline-block;
+  padding: 19px 32px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  background-color: #3596ed;
+  -webkit-transition: opacity 0.2s, background-color 0.2s;
+  -o-transition: opacity 0.2s, background-color 0.2s;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background-color: #2d82cd;
+}
+
+.button:not(:disabled):active {
+  background-color: #2d82cd;
+}
+
+button.button:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+
+.section {
+  margin-bottom: 140px;
+}
+
+.title-large {
+  max-width: 596px;
+  margin-bottom: 40px;
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.title-medium {
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+@media (width <= 1250px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .title-large {
+    max-width: 100%;
+  }
+}
+
+@media (width <= 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (width <= 768px) {
+  .container {
+    max-width: 576px;
+  }
+
+  .title-large {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .title-large {
+    max-width: inherit;
+    text-align: center;
+  }
+
+  .title-medium {
+    font-size: 22px;
+  }
+}
+
+@media (width <= 576px) {
+  .container {
+    max-width: 400px;
+  }
+
+  .section {
+    margin-bottom: 80px;
+  }
+
+  .title-large {
+    font-size: 32px;
+  }
+
+  .title-medium {
+    font-size: 18px;
+  }
+}
