@@ -10,15 +10,15 @@ body, html {
 .wrapper {
     display: grid;
 
-    grid-template: [header] 200px [header-end 
+    grid-template: [header] 100px [header-end 
     main] 1fr [main-end 
-    footer] 300px [footer-end] 
+    footer] 150px [footer-end] 
     /
     [start] minmax(200px, 1fr) [aside-end 
-    main-start] repeat(4, 1fr) [end];
+    main-start] repeat(5, 1fr) [end];
 
-    min-width: 100vw; 
-    min-height: 100vh; 
+    min-width: 100%; 
+    min-height: 100%; 
 }
 
 .header {
@@ -45,8 +45,8 @@ body, html {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: 350px;
+    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+    grid-auto-rows: minmax(320px, 350px);
     place-items: center;
     gap: 20px;
     max-width: 1280px;
@@ -58,18 +58,16 @@ body, html {
     border: 2px solid #111;
     width: 100%;
     height: 100%;
-    min-width: 300px;
     max-width: 450px;
-    min-height: 320px;
 }
 
 @media(width<1440px) {
     .wrapper {
-        grid-template: [header] 200px [header-end 
+        grid-template: [header] 100px [header-end 
         main] 1fr [main-end 
-        footer] 300px [footer-end] 
+        footer] 150px [footer-end] 
         /
-        [start] minmax(200px, 300px) [aside-end 
+        [start] minmax(150px, 250px) [aside-end 
         main-start] repeat(5, 1fr) [end];
     }
 
@@ -77,11 +75,11 @@ body, html {
 
 @media (width<1050px) {
     .wrapper {
-        grid-template: [header] 200px [header-end 
+        grid-template: [header] 80px [header-end 
         main] 1fr [main-end 
-        footer] 300px [footer-end] 
+        footer] 100px [footer-end] 
         /
-        [start] minmax(200px, 300px) [aside-end 
+        [start] minmax(100px, 250px) [aside-end 
         main-start] repeat(5, 1fr) [end];
     }
 }
@@ -101,4 +99,5 @@ body, html {
 }
 
     
+
 
