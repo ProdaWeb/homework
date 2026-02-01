@@ -1,0 +1,81 @@
+@media(width <= 1024px){
+    .air-mag__title{
+        /* min 375px | max 1024px */
+        font-size: clamp(32px, 0.989rem + 4.31vw, 60px);
+    }
+}
+    
+
+.air-mag__description{
+    display: flex;
+    gap: 13px;
+}
+
+@media(width <= 768px){
+    .air-mag__description{
+        flex-direction: column;
+    }
+}
+
+.air-mag__description::before{
+    content: '';
+    display: block;
+    background-image: url(../../icons/air-mag-title-icon.svg);
+    width: 131px;
+    height: 39px;
+    flex-shrink: 0;
+    transform: translateX(-13px);
+}
+
+@media(width > 768px){
+    .air-mag__description{
+        margin-bottom: 20px;
+    }
+}
+
+@media(width <= 768px){
+    .air-mag__description{
+        margin-bottom: 20px;
+    }
+}
+
+.air-mag__image-wrapper{
+    display: flex;
+}
+
+@media(width <= 1024px){
+    .air-mag__image-wrapper{
+        flex-direction: column;
+    }
+}
+
+.air-mag__image-info-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+@media(width > 1024px) {
+    .air-mag__image-info-list {
+        gap: 40px;
+        margin-top: 80px;
+        max-width: 300px;
+    }
+}
+
+@media(width <= 1024px) {
+    .air-mag__image-info-list {
+        gap: 40px;
+        max-width: 700px;
+    }
+}
+
+
+.image-info-item::before {
+    content: '';
+    display: block;
+    background-image: url(../../icons/double-check-icon.svg);
+    width: 45px;
+    height: 33px;
+    transform: translateX(-8px);
+    margin-bottom: 5px;
+}
