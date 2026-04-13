@@ -1,0 +1,59 @@
+.hero__container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: clamp(24.313rem, 5.104rem + 40.02vw, 53.125rem);
+}
+
+.hero__background {
+	position: absolute;
+	left: 0;
+	z-index: var(--layer-negative);
+	width: 100%;
+	height: clamp(24.313rem, 5.104rem + 40.02vw, 53.125rem);
+	background: #dddddd;
+	overflow: hidden;
+}
+
+.hero__image {
+	position: absolute;
+	z-index: var(--layer-0);
+	width: auto;
+	object-fit: cover;
+}
+
+@media (width >= 768px) {
+	.hero__image {
+		left: 50%;
+		/* min 768px | max 1920px */
+		height: clamp(24.313rem, 5.104rem + 40.02vw, 53.125rem);
+	}
+}
+
+@media (width < 768px) {
+	.hero__image {
+		/* min 390px | max 768px */
+		height: clamp(18.188rem, 11.868rem + 25.93vw, 24.313rem);
+		bottom: clamp(-25%, -3.175rem + 6.61vw, 0%);
+		right: clamp(-25%, -3.175rem + 6.61vw, 0%);
+	}
+}
+
+.hero__title {
+	white-space: nowrap;
+	/* min 390px | max 1920px */
+	margin-top: clamp(50px, -0.061rem + 13.07vw, 250px);
+	width: clamp(18.125rem, 13.887rem + 17.39vw, 34.75rem);
+}
+
+.hero__text {
+	/* min 390px | max 1920px */
+	width: clamp(10.625rem, 4.507rem + 25.1vw, 34.625rem);
+}
+
+.hero__button {
+	width: fit-content;
+	/* min 768px | max 1920px */
+	padding-block: clamp(7px, 0.083rem + 0.74vw, 15.5px);
+	padding-inline: clamp(26.5px, 0.615rem + 2.17vw, 51.5px);
+}

@@ -1,0 +1,124 @@
+.features__title {
+	/* min 390px | max 1500px */
+	margin-bottom: clamp(30px, 1.216rem + 2.7vw, 60px);
+}
+
+.features__item-content {
+	margin-inline: auto;
+}
+
+@media (width >= 500px) {
+	.features__list {
+		display: -ms-grid;
+		display: grid;
+		/* min 768px | max 1500px */
+		grid-template-columns: repeat(
+			auto-fit,
+			minmax(clamp(13.125rem, 5.938rem + 23vw, 27.5rem), 1fr)
+		);
+		/* min 500px | max 768px */
+		gap: clamp(10px, -0.541rem + 3.73vw, 20px);
+		justify-content: center;
+	}
+}
+
+@media (width < 500px) {
+	.features__list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+}
+
+.features__item {
+	width: 100%;
+	display: flex;
+	box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+}
+
+@media (width >= 500px) {
+	.features__item {
+		/* min 768px | max 1500px */
+		padding-top: clamp(18px, 0.6rem + 1.09vw, 26px);
+		padding-bottom: clamp(30px, 0.826rem + 2.19vw, 46px);
+		gap: clamp(11px, 0.425rem + 0.55vw, 15px);
+		flex-direction: column;
+	}
+}
+
+@media (width < 500px) {
+	.features__item {
+		padding-top: 16px;
+		padding-bottom: 26px;
+	}
+}
+
+.features__item-image {
+	display: flex;
+}
+
+@media (width >= 500px) {
+	.features__item-image {
+		justify-content: center;
+		align-items: center;
+		margin-inline: auto;
+		/* min 768px | max 1500px*/
+		width: clamp(4.625rem, 2.264rem + 4.92vw, 6.875rem);
+		height: clamp(4.625rem, 2.264rem + 4.92vw, 6.875rem);
+	}
+}
+
+@media (width < 500px) {
+	.features__item-image {
+		align-items: center;
+		margin-left: 33px;
+		width: 74px;
+		height: 74px;
+	}
+}
+
+@media (width > 1500px) {
+	.features__item-icon {
+		width: 74px;
+		height: 80px;
+	}
+}
+
+@media (width <= 1500px) {
+	.features__item-icon {
+		/* min 768px | max 1500px */
+		width: clamp(50px, 1.551rem + 3.28vw, 74px);
+		height: clamp(54px, 1.67rem + 3.55vw, 80px);
+	}
+}
+
+.features__item-container {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (width >= 500px) {
+	.features__item-container {
+		justify-content: center;
+		align-items: center;
+		margin-inline: auto;
+		gap: clamp(8px, 0.172rem + 0.68vw, 13px);
+	}
+}
+
+@media (width < 500px) {
+	.features__item-container {
+		justify-content: center;
+		align-items: center;
+		/* min 390px | max 1500px */
+		width: 100%;
+		margin-inline: auto;
+		gap: 7px;
+		padding-top: 14px;
+	}
+}
+
+.features__item-text {
+	text-align: center;
+}

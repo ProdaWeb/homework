@@ -1,0 +1,269 @@
+.footer {
+	background: #111;
+}
+
+@media (width >= 768px) {
+	.footer__container {
+		padding: clamp(20px, -0.717rem + 4.1vw, 50px) 0
+			clamp(30px, 0.564rem + 2.73vw, 50px) 0;
+	}
+}
+
+@media (width < 768px) {
+	.footer__container {
+		padding: clamp(16px, 0.742rem + 1.06vw, 20px) 0
+			clamp(20px, 0.605rem + 2.65vw, 30px) 0;
+	}
+}
+
+.footer__logo {
+	margin-bottom: 25px;
+}
+
+@media (width >= 768px) {
+	.footer__logo-img {
+		width: clamp(73px, -2.651rem + 15.03vw, 183px);
+		height: clamp(31px, -1.079rem + 6.28vw, 77px);
+	}
+}
+
+@media (width < 768px) {
+	.footer__logo-img {
+		width: clamp(73px, 110px - 37 * (100vw - 390px) / 378, 110px);
+		height: clamp(31px, 46px - 15 * (100vw - 390px) / 378, 46px);
+	}
+}
+
+.footer__logo-img {
+	transform: translateX(-5px);
+}
+
+.footer__menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+@media (width >= 768px) {
+	.footer__menu {
+		justify-content: space-between;
+	}
+}
+
+@media (width < 768px) {
+	.footer__menu {
+		justify-content: start;
+	}
+
+	.footer__stocks {
+		width: 50%;
+	}
+	.footer__menu-about-company {
+		width: 50%;
+	}
+
+	.footer__logistic {
+		transform: translateY(-27px);
+	}
+}
+
+.footer__menu-about-company {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 16px;
+}
+
+.footer__about-company-title {
+	flex-shrink: 0;
+}
+
+@media (width >= 768px) {
+	.footer__about-company-title {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: clamp(10px, -0.686rem + 2.73vw, 30px);
+	}
+}
+
+@media (width < 768px) {
+	.footer__about-company-title {
+		display: block;
+		width: fit-content;
+		height: fit-content;
+		margin-bottom: 10px;
+	}
+}
+
+.about-company__button {
+	cursor: pointer;
+}
+
+.footer__shop,
+.footer__info-title,
+.footer__stocks-title,
+.footer__logistic-title {
+	/* min 390px | max 1500px */
+	margin-bottom: clamp(4px, -0.137rem + 1.59vw, 10px);
+}
+
+.about-company__button,
+.shop__button,
+.info__button,
+.stocks__button,
+.phone-link {
+	transition: color var(--transition-time);
+}
+
+.about-company__button:hover,
+.shop__button:hover,
+.info__button:hover,
+.stocks__button:hover,
+.phone-link:hover {
+	color: var(--accent-color);
+}
+
+.about-company__list,
+.info__list,
+.stocks__list {
+	display: flex;
+	flex-direction: column;
+	/* min 768px | max 1500px */
+	gap: clamp(2px, -0.137rem + 0.55vw, 6px);
+}
+
+.about-company__list a,
+.info__list a,
+.stocks__list a {
+	transition: color var(--transition-time);
+}
+
+.about-company__list a:hover,
+.info__list a:hover,
+.stocks__list a:hover {
+	color: var(--accent-color);
+}
+
+.footer__stocks {
+	position: relative;
+}
+
+.stocks__copyright {
+	position: absolute;
+	text-wrap: nowrap;
+	bottom: 0;
+	left: 0;
+}
+
+.footer__social-media {
+	display: flex;
+	gap: clamp(8px, 0.236rem + 1.08vw, 20px);
+}
+
+@media (width >= 768px) {
+	.footer__social-media {
+		margin-block: clamp(18px, -0.973rem + 4.37vw, 50px);
+	}
+}
+
+@media (width < 768px) {
+	.footer__social-media {
+		margin-top: 16px;
+	}
+}
+
+.footer__telegram-link,
+.footer__vk-link,
+.footer__youtube-link {
+	display: flex;
+	position: relative;
+	border-radius: 50%;
+	background-color: #fff;
+	transition: color var(--transition-time);
+}
+
+@media (width >= 768px) {
+	.footer__telegram-link,
+	.footer__vk-link,
+	.footer__youtube-link {
+		width: clamp(21px, 0.067rem + 2.6vw, 40px);
+		height: clamp(21px, 0.067rem + 2.6vw, 40px);
+	}
+}
+
+@media (width < 768px) {
+	.footer__telegram-link,
+	.footer__vk-link,
+	.footer__youtube-link {
+		width: clamp(18px, 0.932rem + 0.79vw, 21px);
+		height: clamp(18px, 0.932rem + 0.79vw, 21px);
+	}
+}
+
+.footer__telegram-link:hover,
+.footer__vk-link:hover,
+.footer__youtube-link:hover {
+	color: var(--accent-color);
+}
+
+.telegram-link {
+	position: absolute;
+	left: 20%;
+	top: 30%;
+	fill: currentColor;
+}
+
+@media (width >= 768px) {
+	.telegram-link {
+		width: clamp(12px, 0.094rem + 1.37vw, 22px);
+		height: clamp(10px, 0.1rem + 1.09vw, 18px);
+	}
+}
+
+@media (width < 768px) {
+	.telegram-link {
+		width: clamp(10px, 0.496rem + 0.53vw, 12px);
+		height: clamp(8px, 0.371rem + 0.53vw, 10px);
+	}
+}
+
+.vk-link {
+	position: absolute;
+	left: 20%;
+	top: 33%;
+	fill: currentColor;
+}
+
+@media (width >= 768px) {
+	.vk-link {
+		width: clamp(12px, 0.029rem + 1.5vw, 23px);
+		height: clamp(8px, 0.041rem + 0.96vw, 15px);
+	}
+}
+
+@media (width < 768px) {
+	.vk-link {
+		width: 11px;
+		height: 7px;
+	}
+}
+
+.youtube-link {
+	position: absolute;
+	left: 24%;
+	top: 31%;
+	fill: currentColor;
+}
+
+@media (width >= 768px) {
+	.youtube-link {
+		width: clamp(11px, 0.032rem + 1.37vw, 21px);
+		height: clamp(8px, 0.041rem + 0.96vw, 15px);
+	}
+}
+
+@media (width < 768px) {
+	.youtube-link {
+		width: 10px;
+		height: 7px;
+	}
+}

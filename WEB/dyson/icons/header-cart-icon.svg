@@ -1,0 +1,8 @@
+<svg id="cart-icon" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+        d="M3.875 11.6248C3.875 10.1981 5.0316 9.0415 6.45833 9.0415H24.5417C25.9684 9.0415 27.125 10.1981 27.125 11.6248V25.8332C27.125 27.2599 25.9684 28.4165 24.5417 28.4165H6.45833C5.0316 28.4165 3.875 27.2599 3.875 25.8332V11.6248Z"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path
+        d="M10.3333 12.9168V7.75016C10.3333 4.89669 12.6465 2.5835 15.5 2.5835C18.3534 2.5835 20.6667 4.89669 20.6667 7.75016V12.5149"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

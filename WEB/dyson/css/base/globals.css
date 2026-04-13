@@ -1,0 +1,74 @@
+.page {
+	font-family: var(--font-family);
+	font-weight: 400;
+	color: var(--main-color);
+	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+	scrollbar-width: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	height: fit-content;
+}
+
+.page__body {
+	position: relative;
+	min-width: 375px;
+	background-color: var(--bg-color);
+}
+
+.main {
+	width: 100%;
+	margin-top: clamp(2.938rem, 1.993rem + 3.87vw, 5.625rem);
+}
+
+.page__body--no-scroll {
+	overflow-y: hidden;
+}
+
+.section-background {
+	background: #f8f8f8;
+}
+
+@media (width > 768px) {
+	.container {
+		width: min(
+			var(--container-width-desktop),
+			100% - var(--container-padding) * 2
+		);
+		margin-inline: auto;
+	}
+}
+
+@media (width <= 768px) {
+	.container {
+		width: min(
+			var(--container-width-tablet),
+			100% - var(--container-padding-mobile) * 2
+		);
+		margin-inline: auto;
+	}
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus {
+	outline: 1px solid var(--accent-color);
+	outline-offset: 2px;
+	border-radius: 2px;
+}
+
+/* Patterns */
+
+.accent-frame {
+	border-radius: 3px;
+	padding: 10px 20px;
+	background: var(--accent-color);
+	transition: var(--transition-time);
+}
+
+.accent-frame:hover {
+	background: var(--main-color);
+}
