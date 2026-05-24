@@ -138,7 +138,7 @@ body.overflow {
     margin-bottom: 40px;
 }
 
-.content__list {
+.content__list, .content__list-diplom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -163,7 +163,7 @@ body.overflow {
     transition: all .3s;
 }
 
-.content__list-item:hover,.content__list-diplom:hover {
+.content__list-item:hover,.content__list-diplom > a:hover {
     background-color: #AFB1A7;
 }
 
